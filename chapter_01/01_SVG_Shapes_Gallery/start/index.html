@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>SVG Shapes Gallery | D3.js in Action</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SVG Shapes Gallery | D3.js in Action</title>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div style="width: 50%; max-width: 1200px; margin: 0 auto">
+      <svg viewbox="0 0 900 300" style="border: 1px solid black"></svg>
+    </div>
+
+    <div style="width: 100%; height: 100%">
+      <svg>
+        <line
+          id="testLine"
+          x1="50"
+          y1="45"
+          x2="-100"
+          y2="100"
+          stroke="black"
+          stroke-width="10"
+        />
+      </svg>
+    </div>
+
+    <svg>
+      <rect
+        x="260"
+        y="25"
+        width="120"
+        height="60"
+        fill="green"
+        stroke="blue"
+        stroke-width="10"
+        rx="20"
+        ry="30"
+      />
+    </svg>
+
+    <svg><circle id="circle" cx="100" cy="100" r="100" , fill="purple" /></svg>
+  </body>
 </html>
