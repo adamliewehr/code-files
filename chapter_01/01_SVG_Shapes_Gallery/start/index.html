@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,7 +19,7 @@
           y1="45"
           x2="-100"
           y2="100"
-          stroke="black"
+          stroke="green"
           stroke-width="10"
         />
       </svg>
@@ -27,7 +27,7 @@
 
     <svg>
       <rect
-        x="260"
+        x="100"
         y="25"
         width="120"
         height="60"
@@ -39,6 +39,23 @@
       />
     </svg>
 
-    <svg><circle id="circle" cx="100" cy="100" r="100" , fill="purple" /></svg>
+    <svg><circle id="circle" cx="100" cy="100" r="100" fill="purple" stroke="black" stroke-width="20"/></svg>
+    <svg><ellipse cx = "100" cy = "100" rx="50" ry="100"/>
+    <text text-anchor="middle" x="50" y="50" fill="green" font-size="100" font-stretch="ultra-condensed">test</text></svg>
+<!--    font stretch didn't seem to do anything-->
+
+    <svg><path d="M680 150 C 710 80, 725 80, 755 150 S 810 220, 840 150" fill="none" stroke="#773b9a" stroke-width="3"></path></svg>
+
+    <svg><text text-anchor="middle" x="100" y="100">test test svg</text></svg>
+<!--  this isn't working for some reason?-->
+
+  <svg>
+    <g id="group" transform="translate(50, 25)">
+      <rect x="0" y="0" width="60" height="90"/>
+      <circle r="50" cx="50" cy="100" />
+    </g>
+  </svg>
+
+
   </body>
 </html>
