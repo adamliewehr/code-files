@@ -7,9 +7,12 @@ function handleMouseMove(event) {
   const clientY = event.clientY;
   line.setAttribute("x1", clientX);
   line.setAttribute("y1", clientY);
-  group.setAttribute("fill", `rgb(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)})`)
+  group.setAttribute(
+    "fill",
+    `rgb(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)})`,
+  );
 
   circle.setAttribute("r", Math.floor(clientX / 5));
 }
-
+``;
 document.addEventListener("mousemove", handleMouseMove);
