@@ -34,6 +34,7 @@ d3.csv("data/data.csv", (d) => {
 
 function createViz(data) {
   const xScale = d3.scaleLinear().domain([0, 1078]).range([0, 450]);
+
   const yScale = d3
     .scaleBand()
     .domain(data.map((d) => d.technology))
